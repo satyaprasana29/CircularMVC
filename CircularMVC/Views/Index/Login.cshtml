@@ -1,0 +1,26 @@
+﻿@model CircularMVC.Entity.Employee
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<table>
+    <tr>
+        <td>User Name </td>
+        <td>@Html.TextBox("username")</td>
+    </tr>
+    <tr>
+        <td>
+            Password 
+        </td>
+        <td>
+            @Html.TextBox("password")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" runat="server" />
+        </td>
+    </tr>
+</table>
