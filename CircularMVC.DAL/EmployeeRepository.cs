@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using CircularMVC.Entity;
+using CircularManagementSYstem.Entity;
 using System.Linq;
-namespace CircularMVC.DAL
+namespace CircularManagementSYstem.DAL
 {
     public class EmployeeRepository
     {

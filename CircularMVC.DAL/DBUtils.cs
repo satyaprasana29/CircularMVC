@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using CircularMVC.Entity;
+using CircularManagementSYstem.Entity;
 
-namespace CircularMVC.DAL
+namespace CircularManagementSYstem.DAL
 {
     class DBUtils:DbContext
     {

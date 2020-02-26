@@ -1,9 +1,7 @@
-﻿using CircularMVC.Entity;
-using CircularMVC.DAL;
+﻿using CircularManagementSYstem.Entity;
+using CircularManagementSYstem.DAL;
 using System.Web.Mvc;
-using System.Collections.Generic;
-
-namespace CircularMVC.Controllers
+namespace CircularManagementSYstem.Controllers
 {
     public class IndexController : Controller
     {
