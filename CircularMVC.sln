@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularMVC", "CircularMVC\CircularMVC.csproj", "{238799DC-1C89-4439-9435-7CE2DBD0A816}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularManagementSYstem", "CircularMVC\CircularManagementSYstem.csproj", "{238799DC-1C89-4439-9435-7CE2DBD0A816}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularMVC.Entity", "CircularMVC.Entity\CircularMVC.Entity.csproj", "{58D4AF1C-07AD-459F-92B3-7860F51E0C17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularManagamentSYstem.Entity", "CircularMVC.Entity\CircularManagamentSYstem.Entity.csproj", "{58D4AF1C-07AD-459F-92B3-7860F51E0C17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularManagementSYstem.DAL", "CircularMVC.DAL\CircularManagementSYstem.DAL.csproj", "{BF63160D-6500-4E68-9DCB-BB14DE85CF1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{58D4AF1C-07AD-459F-92B3-7860F51E0C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D4AF1C-07AD-459F-92B3-7860F51E0C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D4AF1C-07AD-459F-92B3-7860F51E0C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF63160D-6500-4E68-9DCB-BB14DE85CF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF63160D-6500-4E68-9DCB-BB14DE85CF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF63160D-6500-4E68-9DCB-BB14DE85CF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF63160D-6500-4E68-9DCB-BB14DE85CF1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

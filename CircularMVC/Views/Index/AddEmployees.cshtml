@@ -1,0 +1,84 @@
+﻿@model CircularMVC.Entity.Employee
+
+@{
+    ViewBag.Title = "AddEmployees";
+}
+<h2>AddEmployees</h2>
+@using (Html.BeginForm("AddEmployees", "Index", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Employee Name</td>
+            <td>
+                @Html.TextBoxFor(model => model.employeeName)
+                @Html.ValidationMessageFor(model => model.employeeName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Employee Phone Number
+            </td>
+            <td>
+                @Html.TextBox("phoneNumber")
+                @Html.ValidationMessageFor(model => model.employeePhoneNumber)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Employee Department
+            </td>
+            <td>
+                @Html.EnumDropDownListFor(model => model.department, "Select department")
+                @Html.ValidationMessageFor(model => model.department)
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                Employee Gender
+            </td>
+            <td>
+                @Html.RadioButtonFor(model => model.employeeGender, "Male") Male
+                @Html.RadioButtonFor(model => model.employeeGender, "Female") Female
+                @Html.ValidationMessageFor(model => model.employeeGender)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Reporting Manager
+            </td>
+            <td>
+                @Html.EnumDropDownListFor(model => model.manager, "Select manager")
+                @Html.ValidationMessageFor(model => model.manager)
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                Enter Designation
+            </td>
+            <td>
+                @Html.TextBox("designation")
+                @Html.ValidationMessageFor(model => model.employeeDesignation)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email id
+            </td>
+            <td>
+                @Html.TextBox("employeeEmail")
+                @Html.ValidationMessageFor(model => model.employeeEmail)
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+}
+<div>
+    @Html.ActionLink("BackToHome", "Home")
+</div>
