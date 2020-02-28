@@ -6,6 +6,7 @@ namespace CircularManagementSYstem.Controllers
     public class IndexController : Controller
     {
         // GET: Index
+        [HandleError]
         public ActionResult Home()
         {
             return View();
@@ -15,7 +16,9 @@ namespace CircularManagementSYstem.Controllers
         {
             return View();
         }
+        
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult AddEmployees(Employee employee)
         {
             if(ModelState.IsValid)
@@ -31,10 +34,9 @@ namespace CircularManagementSYstem.Controllers
         {
             return View();
         }
-        //public ActionResult EmployeeView()
+        //public ActionResult ErrorAction()
         //{
-        //    IEnumerable<Employee> employeeList=EmployeeRepository.DisplayEmployee();
-        //    return PartialView(employeeList);
+        //    return View();
         //}
     }
 }

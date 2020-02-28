@@ -19,7 +19,7 @@
                 Employee Phone Number
             </td>
             <td>
-                @Html.TextBox("phoneNumber")
+                @Html.TextBox("employeePhoneNumber")
                 @Html.ValidationMessageFor(model => model.employeePhoneNumber)
             </td>
         </tr>
@@ -58,7 +58,7 @@
                 Enter Designation
             </td>
             <td>
-                @Html.TextBox("designation")
+                @Html.TextBox("employeeDesignation")
                 @Html.ValidationMessageFor(model => model.employeeDesignation)
             </td>
         </tr>
@@ -74,6 +74,7 @@
         <tr>
         <tr>
             <td>
+                @Html.AntiForgeryToken()
                 <input type="submit" />
             </td>
         </tr>
